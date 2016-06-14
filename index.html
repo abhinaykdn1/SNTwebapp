@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Heroic Features - Start Bootstrap Template</title>
-
+    <title>SNT NEWS WebApp</title>
+    <link rel="stylesheet" type="text/css" href="css/new.css">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,20 +39,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">News WEBApp</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="Front_end/index.html">Front End Demo</a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <!-- <li>
+                        <a  >Synopsis</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -65,73 +65,172 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            <h1>GYMKHANA <font color="red">L!VE</font>.</h1>    
+            <p>Aim of the project is to create a News web application for the students Gymkhana IITK.
+            The web app should be able to run on mobile devices like an app would. The
+            interface will be similar to that of Quora / Twitter.</p>
+            <p><a class="btn btn-primary btn-large" href="Presentations/Synopsis.pdf" target=_blank>Project Details</a>
             </p>
         </header>
 
         <hr>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>FEATURES</h3>
+            </div>
+        </div>
+
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  News and Highlights
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+               Main function of the app will be to display the latest news and upcoming and ongoing
+               events and highlights with real-time updates. The homepage will contain
+               recent/top highlights. This page will also contain tabs for the councils/hobby
+               groups/senate - all of which will have their own news page, each showing news
+               related to the clubs of the council.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  PUSH Notifications
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                We’ll implement it via push notifications. Also the notification will have the relevant
+                links to websites and other documents. We’ll also add the contact details
+                of all the cordinators and secretaries along with their phone no,room,email id.
+                Clicking on the email-id will open a form to directly send an email/query to
+                that person. All the users will be authenticated via the cc userids.Right now we
+                will focus mainly on SNT council web page.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                
+                  Others
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body" >
+                <ul>
+                    <li> Sign Up - Using IITK ID</li>
+                    <li>Events - Shows any latest Workshop, Lecture, GC and can be customised based
+                on subscriptions</li>
+                    <li>Notifications - Event reminder, New posts on subscriptions </li>
+                    <li>NewsFeed - Show posts relating to happening of Gymkhana like Robotics Club
+                Workshop, Sports Team Victory, Vox Article with Link, Senate Meeting, Films
+                Club Shoot, etc. </li>
+                    <li> Entities - viz Students’ Senate, ST Council, FMC Council, .... ECell, etc. - Each
+                will have another page with three tabs for eg. SnT Council - Club/HobbyGroups/Teams
+                - Robotics - About, Events Calender, Subscribe Button, Posts, Contact (Contact
+                No. and Question or Query Submission) </li>                    
+                </ul>         
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Latest Features</h3>
+                <h3>Progress</h3>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
+        <div class="row text-left">
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <!-- <img src="http://placehold.it/800x500" alt=""> -->
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        <h3>SOUMYE SINGHAL</h3>
+<!--                         <p>
+                        <ul>
+                            <li>Learnt HTML/CSS/JAVASCRIPT/BOOTSTRAP</li>
+                            <li></li>
+                            <li>Then started to implement the back-end using DJANGO</li>                            
+                        </ul>
                         </p>
+ -->                        
+                    <ul class="list-group">
+                      <li class="list-group-item">Learnt HTM,CSS,JAVASCRIPT and BOOTSTRAP</li>
+                      <li class="list-group-item">Started to learn PHP but then switched to Django 1.9</li>
+                      <li class="list-group-item">Learnt Basics of Python and SQL</li>
+                      <li class="list-group-item">Then started to implement the back-end using DJANGO while referring the documentation</li>                   
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <!-- <img src="http://placehold.it/800x500" alt=""> -->
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <h3>PRANJAL SHARMA</h3>
+                      <ul class="list-group">
+                        <li class="list-group-item">Learnt implementing HTML/CSS/JAVASCRIPT</li>
+                        <li class="list-group-item">For backened learned Php , Sql and Python being used</li>
+                        <li class="list-group-item">BUt then started implementing Blog creation With Admin access in Django 1.9</li>
+                        <li class="list-group-item">Learning Advanced method of Blog creation which include Breadcrumb Navigation</li>
+                        
+                      </ul>
+                      
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <!-- <img src="http://placehold.it/800x500" alt=""> -->
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <h3>FAIZANURRAHIM ANSARI</h3>
+                        <ul class="list-group">
+                          <li class="list-group-item">Learnt Bootstrsp,Jquery,Php</li>
+                          <li class="list-group-item">Switched to Django 1.9</li>
+                          <li class="list-group-item">Practiced Python and learnt Django 1.9 from Documentations and Youtube</li>
+                          <li class="list-group-item">Implemented backend in Django 1.9</li>
+                          
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <!-- <img src="http://placehold.it/800x500" alt=""> -->
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        <h3>PRASHANT KUMAR</h3>
+                      <ul class="list-group">
+                        <li class="list-group-item">Learnt implementing HTML/CSS/JAVASCRIPT</li>
+                        <li class="list-group-item">Learnt Bootrap in Detail</li>
+                        <li class="list-group-item">Implemented a basic model of front-end</li>
+                        <li class="list-group-item">Learnt Basic Django from youtube.</li>
+                        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+                      </ul>
+                       
                     </div>
                 </div>
             </div>
@@ -141,11 +240,116 @@
 
         <hr>
 
+
+        <div class="container" >
+            <div class="page-header">
+                <h1 id="timeline">Timeline</h1>
+            </div>
+            <ul class="timeline">
+                <li>
+                  <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+               <!--  <li>
+                  <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      <hr>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                          <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li> -->
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p></p>
                 </div>
             </div>
         </footer>

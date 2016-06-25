@@ -257,7 +257,7 @@ def cultural(request):
 	queryset_list = Post.objects.filter(tags__icontains="u'Cultural Council'", publish__lte=timezone.now())#active_snt() #.order_by("-timestamp")
 	
 	if request.user.is_staff or request.user.is_superuser:
-		queryset_list = Post.objects.filter(tags__icontains="u'Cultutal Council'", publish__lte=timezone.now())#active_snt()
+		queryset_list = Post.objects.filter(tags__icontains="u'Cultural Council'", publish__lte=timezone.now())#active_snt()
 	
 	query = request.GET.get("q")
 	if query:

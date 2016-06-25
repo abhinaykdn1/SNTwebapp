@@ -1,5 +1,5 @@
 h1 {
-    color: black;
+    color: white;
     font-family: 'Josefin Slab', serif;
 }
 
@@ -7,19 +7,32 @@ h1 {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+.img-circle {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+
+}
 
 .comment-reply{
     display:none;
 }
-body {
-	/*background-color: e6e6e6;*/
-	/*background-color: #417690;*/
-	background-image : "{% static 'images/download.jpeg' %}" height="200px" width="200px";
-	background-repeat: repeat-y;
-}
 
 .snt_background {
 	background : "";
+}
+#center {
+    text-align: center;
+}
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
 }
 /*.navbar {
 	background: #417690 !important; 

@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-
-
+{% load staticfiles %}
+<div class="inner" style="background-color=#ffffff;">
 <div class='col-sm-6 col-sm-offset-3'>
-    <h1>News Feed</h1>
+    <h1 >NEWS FEED</h1>
     <hr>
 <form method='GET' action='' class='row'>
         <div class='col-sm-6'>
@@ -37,7 +37,7 @@
 {% endfor %}
 
 
-<!-- <div class="pagination">
+<div class="pagination">
     <span class="step-links">
         {% if object_list.has_previous %}
             <a href="?{{ page_request_var }}={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
@@ -51,27 +51,12 @@
             <a href="?{{ page_request_var }}={{ object_list.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
         {% endif %}
     </span>
-</div> -->
-
-<ul class="pagination">
-    <!-- <span class="step-links"> -->
-        {% if object_list.has_previous %}
-            <li><a href="?{{ page_request_var }}={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a></li>
-        {% endif %}
-
-        <!-- <span class="current"> -->
-            <li><a>Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.</a></li>
-        <!-- </span> -->
-
-        {% if object_list.has_next %}
-            <li><a href="?{{ page_request_var }}={{ object_list.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a></li>
-        {% endif %}
-    <!-- </span> -->
-</ul>
+</div>
 
 
 </div>
 
+</div>
 </div>
 
 {% endblock content %}

@@ -14,7 +14,10 @@
 
 
 
+
 {% block content %}
+<div class="inner" style="background: black">
+
 <div class='col-sm-6 col-sm-offset-3'>
     {% if instance.image %}
     <img src='{{ instance.image.url }}' class='img-responsive' />
@@ -113,6 +116,6 @@ Linkedin
 </div>
 </div>
 </div>
-
+</div>
 
 {% endblock content %}

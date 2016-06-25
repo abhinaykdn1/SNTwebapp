@@ -9,7 +9,7 @@ from .models import Post
 tag_choices = (
     ('SNT Council', 'SNT Council'),
     ('Games and Sports', 'Games and Sports'),
-    ('Cultutal Council', 'Cultutal Council'),
+    ('Cultural Council', 'Cultural Council'),
     ('FMC', 'FMC'),
     ('Vox Populi', 'Vox Populi'),
     ('Senate', 'Senate')
